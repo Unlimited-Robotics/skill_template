@@ -61,7 +61,9 @@ class RayaApplication(RayaApplicationBase):
 
 
     async def cb_skill_feedback(self, feedback):
-        self.log.info(feedback)
+        self.log.debug(
+            f'Callback Feedback: \'{feedback}\''
+        )
 
 
     def get_arguments(self):
